@@ -1,8 +1,11 @@
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
-        if(n != 0 && log2(n) == 31- __builtin_clz(n))
+        if(n == 0)
+            return false;
+        if(log2(n) == (int)__lg(n))
             return true;
-        return false;
+        else
+            return false;
     }
 };
