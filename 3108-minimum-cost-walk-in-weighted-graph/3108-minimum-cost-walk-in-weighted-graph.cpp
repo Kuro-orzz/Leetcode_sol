@@ -2,19 +2,18 @@ class Solution {
 public:
     bool visited[100001];
     vector<pair<int, int>> adj[100001];
-    int len[100001];
+    int scc[100001];
     int value[100001];
     int tmp = INT_MAX;
     
-    void dfs(int u, int val, vector<int> &vi){
+    void dfs(int u, int scc_num, vector<int> &vi){
         visited[u] = true;
-        len[u] = val;
+        scc[u] = scc_num;
         vi.push_back(u);
         for(pair<int, int> v : adj[u]){
             tmp = tmp & v.second;
             if(!visited[v.first]){
-                // cout << tmp << " " << v.second << endl << endl;
-                dfs(v.first, val, vi);
+                dfs(v.first, scc_num, vi);
             }
         }
     }
@@ -25,7 +24,6 @@ public:
             adj[edges[i][0]].push_back({edges[i][1], edges[i][2]});
             adj[edges[i][1]].push_back({edges[i][0], edges[i][2]});
         }
-        memset(visited, false, sizeof(visited));
         for(int i = 0; i < n; i++){
             tmp = INT_MAX;
             vector<int> v;
@@ -33,10 +31,9 @@ public:
                 dfs(i, i, v);
             for(int x : v)
                 value[x] = tmp;
-            // cout << len[i] << " " << value[i] << endl;
         }
         for(int i = 0; i < query.size(); i++){
-            if(len[query[i][0]] != len[query[i][1]])
+            if(scc[query[i][0]] != scc[query[i][1]])
                 ans.push_back(-1);
             else if(query[i][0] == query[i][1])
                 ans.push_back(0);
