@@ -1,9 +1,6 @@
 class Solution {
 public:
     int minRectanglesToCoverPoints(vector<vector<int>>& points, int w) {
-        // auto cmp = [&](vector<int> a, vector<int> b){
-        //     return a[0] < b[0];
-        // };
         sort(points.begin(), points.end());
         int ans = 0;
         int start = -1, end = -1;
