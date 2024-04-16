@@ -9,6 +9,13 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+#pragma GCC optimize("O3, unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+static const bool __io_boost = [](){
+    cin.tie(nullptr); cout.tie(nullptr);
+    return ios_base::sync_with_stdio(false);      
+}();
+
 class Solution {
 public:
     TreeNode* addOneRow(TreeNode* root, int val, int depth) {
