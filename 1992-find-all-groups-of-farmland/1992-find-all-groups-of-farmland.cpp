@@ -9,7 +9,6 @@ public:
         for(int i = 0; i < n; i++)
             for(int j = 0; j < m; j++){
                 if(land[i][j] && !visited[i][j]){
-                    cout << i << " " << j << endl;
                     int x = i, y = j;
                     while(x+1 < n && land[x+1][j] && !visited[x+1][y])
                         x++;
