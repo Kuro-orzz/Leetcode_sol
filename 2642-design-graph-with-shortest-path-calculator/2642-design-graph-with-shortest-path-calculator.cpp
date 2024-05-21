@@ -5,19 +5,20 @@ class Graph {
 public:
     int nodes = 0;
     vector<vector<int>> e;
+    vector<pii> adj[100];
     Graph(int n, vector<vector<int>>& edges) {
         nodes = n;
-        e = edges; 
+        e = edges;
+        for(int i = 0; i < e.size(); i++)
+            adj[e[i][0]].push_back({e[i][1], e[i][2]});
     }
     
     void addEdge(vector<int> edge) {
         e.push_back(edge);
+        adj[edge[0]].push_back({edge[1], edge[2]});
     }
     
     int shortestPath(int node1, int node2) {
-        vector<pii> adj[nodes];
-        for(int i = 0; i < e.size(); i++)
-            adj[e[i][0]].push_back({e[i][1], e[i][2]});
         vector<bool> vis(nodes, false);
         vector<int> d(nodes, INT_MAX);
         d[node1] = 0;
