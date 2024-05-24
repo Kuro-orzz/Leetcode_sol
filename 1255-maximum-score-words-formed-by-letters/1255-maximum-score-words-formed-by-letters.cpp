@@ -1,7 +1,7 @@
 class Solution {
 public:
-    map<char, int> mp;
-    map<char, int> used;
+    unordered_map<char, int> mp;
+    unordered_map<char, int> used;
     int ans = 0;
     void solve(int k, vector<string> &words, vector<int> &score){
         for(auto it : mp)
