@@ -3,7 +3,7 @@ public:
     long long sumDigitDifferences(vector<int>& nums) {
         long long ans = 0;
         int n = to_string(nums[0]).size();
-        map<int, int> mp[n];
+        unordered_map<int, int> mp[n];
         for(int i = 0; i < nums.size(); i++){
             for(int j = 0; j < n; j++){
                 for(auto it : mp[j])
