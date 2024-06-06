@@ -11,7 +11,6 @@ public:
                 for(int i = it.first; i < it.first+groupSize; i++)
                     mp[i]--;
             }
-            // cout << it.first << " " << it.second << endl;
         } 
         for(auto &it : mp)
             if(it.second != 0)
