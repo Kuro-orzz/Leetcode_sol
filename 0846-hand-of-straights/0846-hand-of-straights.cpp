@@ -12,7 +12,7 @@ public:
                     mp[i]--;
             }
         } 
-        for(auto &it : mp)
+        for(const auto &it : mp)
             if(it.second != 0)
                 return false;
         return true;
