@@ -27,7 +27,6 @@ public:
             a = tmp + a;
         }
         int memo = 0;
-        cout << a << " " << b << endl;
         for(int i = a.size()-1; i >= 0; i--){
             char c;
             if(memo == 1){
@@ -38,7 +37,6 @@ public:
             }
             else
                 c = sum(a[i], b[i], memo);
-            cout << a[i] << " " << b[i] << " " << c << " " << memo << endl;
             ans += c;
         }
         if(memo == 1)
