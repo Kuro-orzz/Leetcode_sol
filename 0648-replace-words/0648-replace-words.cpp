@@ -1,32 +1,35 @@
 class Solution {
 public:
-    int child[100001][26];
-    int isEnd[100001];
-    int cnt = 0;
+    struct node{
+        node* child[26];
+        int isEnd;
+        node(){
+            memset(child, 0, sizeof(child));
+            isEnd = 0;
+        }
+    };
+    node* root = new node();
     void add(string &s){
-        int u = 0;
+        node* u = root;
         for(int i = 0; i < s.size(); i++){
             int k = s[i]-'a';
-            if(!child[u][k])
-                child[u][k] = ++cnt;
-            u = child[u][k];
+            if(!u->child[k])
+                u->child[k] = new node();
+            u = u->child[k];
         }
-        isEnd[u] = 1;
+        u->isEnd = 1;
     }
     int query(string &s){
-        int u = 0;
-        int tail = 0;
+        node* u = root;
         for(int i = 0; i < s.size(); i++){
             int k = s[i]-'a';
-            if(!child[u][k])
-                break;
-            u = child[u][k];
-            if(isEnd[u]){
-                tail = i+1;
-                break;
-            }
+            if(!u->child[k])
+                return 0;
+            u = u->child[k];
+            if(u->isEnd)
+                return i+1;
         }
-        return tail;
+        return 0;
     }
     string replaceWords(vector<string>& dictionary, string sentence) {
         int n = dictionary.size();
