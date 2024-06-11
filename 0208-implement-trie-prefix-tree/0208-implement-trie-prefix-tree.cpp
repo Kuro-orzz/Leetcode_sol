@@ -1,13 +1,13 @@
-struct node{
-    node* child[26];
-    int isEnd;
-    node(){
-        memset(child, 0, sizeof(child));
-        isEnd = 0;
-    }
-};
 class Trie {
 public:
+    struct node{
+        node* child[26];
+        int isEnd;
+        node(){
+            memset(child, 0, sizeof(child));
+            isEnd = 0;
+        }
+    };
     node* root;
     Trie() {
         root = new node;
