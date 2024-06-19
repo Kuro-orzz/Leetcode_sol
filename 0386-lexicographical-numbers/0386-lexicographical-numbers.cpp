@@ -1,21 +1,43 @@
 class Solution {
 public:
-    vector<int> lexicalOrder(int n) {
-        vector<int> v(n);
-        iota(v.begin(), v.end(), 1);
-        auto cmp = [&](int a, int b){
-            string u = to_string(a), v = to_string(b);
-            while(u.size() < v.size())
-                u += '*';
-            while(u.size() > v.size())
-                v += '*';
-            for(int i = 0; i < u.size(); i++){
-                if(u[i] != v[i])
-                    return u[i] < v[i];
+    struct Node{
+        Node* child[10];
+        bool isEnd;
+        Node(){
+            memset(child, 0, sizeof(child));
+            isEnd = false;
+        }
+    };
+    Node* r = new Node();
+    vector<int> ans;
+    void add(string& s){
+        Node* u = r;
+        for(int i = 0; i < s.size(); i++){
+            int k = s[i]-'0';
+            if(!u->child[k])
+                u->child[k] = new Node();
+            u = u->child[k];
+        }
+        u->isEnd = true;
+    }
+    void travel(Node* r, string& s){
+        Node* u = r;
+        if(u->isEnd) 
+            ans.push_back(stoi(s));
+        for(int i = 0; i < 10; i++){
+            if(u->child[i]){
+                string x = s + to_string(i);
+                travel(u->child[i], x);
             }
-            return u < v;
-        };
-        sort(v.begin(), v.end(), cmp);
-        return v;
+        }
+    }
+    vector<int> lexicalOrder(int n) {
+        for(int i = 1; i <= n; i++){
+            string x = to_string(i);
+            add(x);
+        }
+        string s = "";
+        travel(r, s);      
+        return ans;
     }
 };
