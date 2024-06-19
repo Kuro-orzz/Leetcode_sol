@@ -10,7 +10,7 @@ public:
     };
     Node* r = new Node();
     vector<int> ans;
-    void add(string s){
+    void add(string& s){
         Node* u = r;
         for(int i = 0; i < s.size(); i++){
             int k = s[i]-'0';
@@ -30,8 +30,10 @@ public:
         }
     }
     vector<int> lexicalOrder(int n) {
-        for(int i = 1; i <= n; i++)
-            add(to_string(i));
+        for(int i = 1; i <= n; i++){
+            string x = to_string(i); 
+            add(x);
+        }
         travel(r, "");      
         return ans;
     }
