@@ -4,7 +4,7 @@ public:
         int n = position.size();
         sort(position.begin(), position.end());
         int ans = 0;
-        int l = 1, r = 1e9;
+        int l = 1, r = position[position.size()-1];
         while(l <= r){
             int mid = (l+r) >> 1;
             int t = 1;
