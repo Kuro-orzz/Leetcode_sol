@@ -9,14 +9,12 @@ public:
             int mid = (l+r) >> 1;
             int t = 1;
             int pos = position[0];
-            for(int i = 1; i < m; i++){
-                auto it = lower_bound(position.begin(), position.end(), pos+mid);
-                if(it != position.end()){
-                    pos = position[it-position.begin()];
+            for(int i = 1; i < n; i++){
+                if(pos + mid <= position[i]){
+                    pos = position[i];
                     t++;
                 }
-                else
-                    break;
+                if(t == m)  break;
             }
             if(t == m){
                 ans = mid;
