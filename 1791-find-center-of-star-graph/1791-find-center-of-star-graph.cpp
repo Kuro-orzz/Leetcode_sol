@@ -1,7 +1,7 @@
 class Solution {
 public:
     int findCenter(vector<vector<int>>& edges) {
-        vector<int> cnt(edges.size()+2);
+        map<int, int> cnt;
         for(int i = 0; i < 2; i++){
             cnt[edges[i][0]]++;
             cnt[edges[i][1]]++;
