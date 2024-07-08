@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0239-sliding-window-maximum) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Greedy
@@ -35,5 +36,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Queue
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0239-sliding-window-maximum) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1951-find-the-winner-of-the-circular-game) |
+## Sliding Window
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0239-sliding-window-maximum) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0239-sliding-window-maximum) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0239-sliding-window-maximum) |
 <!---LeetCode Topics End-->
