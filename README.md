@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0239-sliding-window-maximum) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+| [1803-average-waiting-time](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Greedy
 |  |
@@ -27,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [1803-average-waiting-time](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/2645-pass-the-pillow) |
 ## Recursion
