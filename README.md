@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0292-nim-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0292-nim-game) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/2645-pass-the-pillow) |
 ## Simulation
@@ -61,4 +62,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1720-crawler-log-folder](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1720-crawler-log-folder) |
+## Brainteaser
+|  |
+| ------- |
+| [0292-nim-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0292-nim-game) |
+## Game Theory
+|  |
+| ------- |
+| [0292-nim-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0292-nim-game) |
 <!---LeetCode Topics End-->
