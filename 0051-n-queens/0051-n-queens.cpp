@@ -7,7 +7,6 @@ public:
     }
     int dx[4] = {-1, -1, 1, 1};
     int dy[4] = {1, -1, -1, 1};
-    vector<pair<int, int>> pos;
     void Try(int x, int y, int n){
         if(y == n) return;
         for(int i = 0; i < n; i++){
