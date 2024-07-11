@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0051-n-queens](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0051-n-queens) |
 | [0239-sliding-window-maximum](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0239-sliding-window-maximum) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1720-crawler-log-folder) |
@@ -72,4 +73,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0292-nim-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0292-nim-game) |
+## Backtracking
+|  |
+| ------- |
+| [0051-n-queens](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0051-n-queens) |
 <!---LeetCode Topics End-->
