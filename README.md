@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1720-crawler-log-folder](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2846-robot-collisions](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/2846-robot-collisions) |
 ## Greedy
 |  |
 | ------- |
@@ -18,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+| [2846-robot-collisions](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/2846-robot-collisions) |
 ## Linked List
 |  |
 | ------- |
@@ -34,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1803-average-waiting-time](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/2645-pass-the-pillow) |
+| [2846-robot-collisions](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/2846-robot-collisions) |
 ## Recursion
 |  |
 | ------- |
@@ -65,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1720-crawler-log-folder) |
+| [2846-robot-collisions](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/2846-robot-collisions) |
 ## Brainteaser
 |  |
 | ------- |
