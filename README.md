@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0051-n-queens](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0051-n-queens) |
+| [0084-largest-rectangle-in-histogram](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0084-largest-rectangle-in-histogram) |
 | [0239-sliding-window-maximum](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0239-sliding-window-maximum) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1720-crawler-log-folder) |
@@ -66,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0084-largest-rectangle-in-histogram) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/1720-crawler-log-folder) |
 | [2846-robot-collisions](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/2846-robot-collisions) |
@@ -94,4 +96,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0113-path-sum-ii](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0113-path-sum-ii) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/Kuro-orzz/Leetcode_sol/tree/master/0084-largest-rectangle-in-histogram) |
 <!---LeetCode Topics End-->
