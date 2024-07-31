@@ -1,37 +1,47 @@
+#define ll long long
 class Solution {
 public:
-    int largestRectangleArea(vector<int>& heights) {
+    int largestRectangleArea(vector<int>& v) {
+        int n = v.size();
         stack<int> st;
-        int ans = 0;
-        for(int i = 0; i < heights.size(); i++){
+        vector<ll> ans(n, 0);
+        for(int i = 0; i < n; i++){
             if(st.empty())
                 st.push(i);
-            else if(!st.empty() && heights[i] >= heights[st.top()])
-                st.push(i);
             else{
-                while(!st.empty() && heights[i] < heights[st.top()]){
-                    int tmp = st.top();
+                while(!st.empty() && v[st.top()] > v[i]){
+                    int j = st.top();
                     st.pop();
-                    int val = (i-tmp)*heights[tmp];
-                    if(!st.empty())
-                        val += (tmp-st.top()-1)*heights[tmp];
-                    else
-                        val += tmp*heights[tmp];
-                    ans = max(ans, val);
+                    ans[j] += (i-j)*v[j];
                 }
                 st.push(i);
             }
         }
+        int sz1 = st.top()+1;
         while(!st.empty()){
-            int tmp = st.top();
-            st.pop();
-            int val = (heights.size()-tmp)*heights[tmp];
-            if(!st.empty())
-                val += (tmp-st.top()-1)*heights[tmp];
-            else
-                val += tmp*heights[tmp];
-            ans = max(ans, val);
+            int t = st.top(); st.pop();
+            ans[t] += (sz1-t)*v[t];
         }
-        return ans;
+        for(int i = n-1; i >= 0; i--){
+            if(st.empty())
+                st.push(i);
+            else{
+                while(!st.empty() && v[st.top()] > v[i]){
+                    int j = st.top();
+                    st.pop();
+                    ans[j] += (j-i-1)*v[j];
+                }
+                st.push(i);
+            }
+        }
+        int sz2 = st.top()-1;
+        while(!st.empty()){
+            int t = st.top(); st.pop();
+            ans[t] += (t-sz2-1)*v[t];
+        }
+        ll res = 0;
+        for(int i = 0; i < n; i++)
+            res = max(res, ans[i]);
+        return res;
     }
 };
