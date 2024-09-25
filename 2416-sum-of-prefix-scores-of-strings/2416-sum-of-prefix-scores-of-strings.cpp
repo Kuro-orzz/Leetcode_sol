@@ -1,3 +1,6 @@
+// Hashing sol
+
+/*
 class Solution {
 public:
     vector<int> sumPrefixScores(vector<string>& words) {
@@ -27,6 +30,56 @@ public:
                 cnt += mp[j][getHash(i, 1, j+1)];
             }
             ans[i] = cnt;
+        }
+        return ans;
+    }
+};
+*/
+
+// Trie sol
+
+class Solution {
+public:
+    struct Trie{
+        struct Node{
+            int cnt;
+            Node* child[26];
+            Node(){
+                memset(child, 0, sizeof(child));
+                cnt = 0;
+            }
+        };
+        Node* root = new Node();
+        void add(string &s){
+            Node* u = root;
+            for(int i = 0; i < s.size(); i++){
+                int k = s[i]-'a';
+                if(!u->child[k])
+                    u->child[k] = new Node();
+                u->child[k]->cnt++;
+                u = u->child[k];
+            }
+        }
+        int query(string &s){
+            Node* u = root;
+            int ans = 0;
+            for(int i = 0; i < s.size(); i++){
+                int k = s[i]-'a';
+                ans += u->child[k]->cnt;
+                u = u->child[k];
+            }
+            return ans;
+        }
+    };
+
+    vector<int> sumPrefixScores(vector<string>& words) {
+        Trie T;
+        int n = words.size();
+        for(int i = 0; i < n; i++)
+            T.add(words[i]);
+        vector<int> ans(n);
+        for(int i = 0; i < n; i++){
+            ans[i] = T.query(words[i]);
         }
         return ans;
     }
