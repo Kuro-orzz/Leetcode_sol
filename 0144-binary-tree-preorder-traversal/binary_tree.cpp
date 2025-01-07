@@ -11,20 +11,17 @@
  */
 class Solution {
 public:
-    int ans = INT_MIN;
+    vector<int> ans;
 
-    int calc(TreeNode* r, int sum = 0){
-        if(!r) return sum;
-        int le = max(calc(r->left), 0);
-        int ri = max(calc(r->right), 0);
-        int t = max(le+r->val, ri+r->val);
-        ans = max({ans, t, r->val, le+ri+r->val});
-        return t;
+    void preorder(TreeNode* r){
+        if(!r) return;
+        ans.push_back(r->val);
+        preorder(r->left);
+        preorder(r->right);
     }
 
-    int maxPathSum(TreeNode* root) {
-        if(!root) return 0;
-        calc(root);
+    vector<int> preorderTraversal(TreeNode* root) {
+        preorder(root);
         return ans;
     }
 };
