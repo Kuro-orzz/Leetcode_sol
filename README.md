@@ -2,7 +2,7 @@
 
 [![Leetcode Stats](https://leetcard.jacoblin.cool/Kuro_hoshi?ext=contest)](https://leetcode.com/Kuro_hoshi/)
 
-- [ ] Complete 500 problems
+- [x] Complete 500 problems
 - [ ] Reach 1900 rating
 
 Target next year:
