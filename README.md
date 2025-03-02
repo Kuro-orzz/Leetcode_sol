@@ -5,6 +5,6 @@
 - [x] Complete 500 problems
 - [ ] Reach 1900 rating
 
-Target next year:
+Target this year:
 - Complete 1000 problems
 - Reach 2000 rating
