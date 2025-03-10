@@ -1,0 +1,16 @@
+class Solution {
+public:
+    vector<int> pivotArray(vector<int>& nums, int pivot) {
+        int cnt = 0;
+        vector<int> l, h;
+        for(int &x : nums){
+            if(x == pivot) cnt++;
+            else if(x > pivot) h.push_back(x);
+            else l.push_back(x);
+        }
+        for(int i = 0; i < cnt; i++)
+            l.push_back(pivot);
+        l.insert(l.end(), h.begin(), h.end());
+        return l;
+    }
+};
