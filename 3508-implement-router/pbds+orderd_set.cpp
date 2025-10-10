@@ -19,7 +19,7 @@ public:
     int memoryLimit;
     // dest, [ts, src]
     unordered_map<int, ordered_set<pii>> pack;
-    // ts, src, dest
+    // src, dest, ts
     queue<vector<int>> q;
 
     void removeOldestPacket() {
