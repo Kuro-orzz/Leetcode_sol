@@ -4,6 +4,14 @@
 
 ## 🏆 LeetCode Achievements
 
-*   **Problems Solved:** 950+ (Chasing the 1k club! 🎯)
+*   **Problems Solved:** 1000+ 🎊
 *   **Contest Rating:** 1900+ 📈
 *   **Current Rank:** Knight ⚔️
+
+## 🎯 Milestone: Problem #1000
+
+> **[Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/description/)**
+>
+> Tagged: `Hard` — *but should've been Medium tbh* 🙄
+>
+> 🕑 *17 June 2026, 14:15*
