@@ -15,3 +15,14 @@
 > Tagged: `Hard` — *but should've been Medium tbh* 🙄
 >
 > 🕑 *17 June 2026, 14:15*
+
+## ✨ Next target
+
+
+🧥 **LeetCode Hoodie** — `10,302 / 16,000` pts (`64%`)
+
+<img src="assets/current_points.png" width="200">
+
+<img src="assets/leetcode_hoodie.png" width="200">
+
+> Grinding daily problems for coins is very slow but I'm still too lazy to do weekly contests 🫠
